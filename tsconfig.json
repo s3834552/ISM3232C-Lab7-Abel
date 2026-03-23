@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "es2015",
+      "dom",
+      "scripthost"
+    ],
+    "sourceMap": true,
+    "outDir": "./.tmp",
+    "rootDir": "./src",
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "services/*": ["src/services/*"]
+    },
+    "esModuleInterop": true,
+
+    /* Strict Type-Checking Options */
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+
+    /* Experimental Options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
